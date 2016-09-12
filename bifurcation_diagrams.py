@@ -2,12 +2,6 @@ import matplotlib.pyplot as plt
 import math
 from functools import partial
 
-def frange(start, stop, step):
-    i = start
-    while i < stop:
-        yield i
-        i += step
-
 def make_phase_line(func, x0 = 0.5, n_points = 100, n_skip = 100):
     x = func(x = x0)
     points = []
